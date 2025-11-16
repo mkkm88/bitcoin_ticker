@@ -83,6 +83,24 @@ class _PriceScreenState extends State<PriceScreen> {
     getData();
   }
 
+  ////For bonus points, create a method that loops through the cryptoList and generates a CryptoCard for each. Call makeCards() in the build() method instead of the Column with 3 CryptoCards.
+  //  Column makeCards() {
+  //    List<CryptoCard> cryptoCards = [];
+  //    for (String crypto in cryptoList) {
+  //      cryptoCards.add(
+  //        CryptoCard(
+  //          cryptoCurrency: crypto,
+  //          selectedCurrency: selectedCurrency,
+  //          value: isWaiting ? '?' : coinValues[crypto],
+  //        ),
+  //      );
+  //    }
+  //    return Column(
+  //      crossAxisAlignment: CrossAxisAlignment.stretch,
+  //      children: cryptoCards,
+  //    );
+  //  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
